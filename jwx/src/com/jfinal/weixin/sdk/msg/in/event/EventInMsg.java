@@ -8,6 +8,9 @@ package com.jfinal.weixin.sdk.msg.in.event;
 
 import com.jfinal.weixin.sdk.msg.in.InMsg;
 
+/**
+ * @author wanglong
+ */
 public abstract class EventInMsg extends InMsg
 {
     protected String event;

@@ -10,7 +10,7 @@ import java.util.Map;
 
 import com.alibaba.fastjson.JSONObject;
 
-/**
+/** 
  * 封装 access_token
  */
 public class AccessToken {

@@ -1,14 +1,16 @@
 package com.wx.kernel.util.wx;
-import java.security.cert.CertificateException;  
-import java.security.cert.X509Certificate;  
-import javax.net.ssl.SSLContext;  
-import javax.net.ssl.TrustManager;  
-import javax.net.ssl.X509TrustManager;  
-import org.apache.http.conn.ClientConnectionManager;  
-import org.apache.http.conn.scheme.Scheme;  
-import org.apache.http.conn.scheme.SchemeRegistry;  
-import org.apache.http.conn.ssl.SSLSocketFactory;  
-import org.apache.http.impl.client.DefaultHttpClient;  
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
+import org.apache.http.conn.ClientConnectionManager;
+import org.apache.http.conn.scheme.Scheme;
+import org.apache.http.conn.scheme.SchemeRegistry;
+import org.apache.http.conn.ssl.SSLSocketFactory;
+import org.apache.http.impl.client.DefaultHttpClient;
 //用于进行Https请求的HttpClient  
 public class SSLClient extends DefaultHttpClient{  
     public SSLClient() throws Exception{  

@@ -8,6 +8,7 @@ package com.jfinal.weixin.sdk.msg.out;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import com.jfinal.weixin.sdk.msg.in.InMsg;
 
 /**

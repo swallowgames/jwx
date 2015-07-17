@@ -11,7 +11,15 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import com.jfinal.weixin.sdk.msg.out.*;
+import com.jfinal.weixin.sdk.msg.out.OutCustomMsg;
+import com.jfinal.weixin.sdk.msg.out.OutImageMsg;
+import com.jfinal.weixin.sdk.msg.out.OutMsg;
+import com.jfinal.weixin.sdk.msg.out.OutMusicMsg;
+import com.jfinal.weixin.sdk.msg.out.OutNewsMsg;
+import com.jfinal.weixin.sdk.msg.out.OutTextMsg;
+import com.jfinal.weixin.sdk.msg.out.OutVideoMsg;
+import com.jfinal.weixin.sdk.msg.out.OutVoiceMsg;
+
 import freemarker.cache.StringTemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.ObjectWrapper;

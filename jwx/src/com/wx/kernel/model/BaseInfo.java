@@ -6,9 +6,9 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
-import org.hibernate.annotations.Where;
-
 import lombok.Data;
+
+import org.hibernate.annotations.Where;
 
 @Data
 @MappedSuperclass

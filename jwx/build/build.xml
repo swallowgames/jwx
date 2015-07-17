@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wdapp" default="build-war" basedir="../">
+	<description>系统</description>
+
+	<!-- ================================= 
+			公共功能 :公共属性、预处理           
+         ================================= -->
+
+	<!-- - - - - - - - - - - - - - - - - - 
+			公共属性
+         - - - - - - - - - - - - - - - - - -->
+	<property environment="osenv"/>
+	<property name="src.path" location="${basedir}/src" />
+	<property name="classes.path" location="${basedir}/WebRoot/WEB-INF/classes" />
+	<property name="lib.path" location="${basedir}/WebRoot/WEB-INF/lib" />
+	<property name="build.path" location="${basedir}/build" />
+	<property name="webcontent.path" location="${basedir}/WebRoot" />
+	<!-- - - - - - - - - - - - - - - - - - 
+          	公共预处理
+         - - - - - - - - - - - - - - - - - -->
+	<tstamp>
+		<format property="TODAY" pattern="yyyy-MM-dd" locale="cn" />
+	</tstamp>
+
+	<echo>Ant build basedir: ${basedir}</echo>
+	<echo>${tomcat.home}</echo>
+	<echo>${osenv.JAVA_HOME}</echo>
+
+	<!-- ================================= 
+			基础功能 :编译、构建、部署           
+         ================================= -->
+	<!-- - - - - - - - - - - - - - - - - - 
+	          target: build-war 构建war程序包                     
+	         - - - - - - - - - - - - - - - - - -->
+	<target name="build-war" >
+		<delete file="${build.path}/wxapp.war" />
+		<war destfile="${build.path}/wxapp.war" webxml="${webcontent.path}/WEB-INF/web.xml">
+			<fileset dir="${webcontent.path}">
+				<include name="**/*" />
+				<exclude name="WEB-INF/classes/*.properties" />
+				<exclude name="WEB-INF/lib/*" />
+			</fileset>
+		</war>
+	</target>
+
+</project>

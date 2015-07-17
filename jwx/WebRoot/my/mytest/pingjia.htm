@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=480, user-scalable=no, target-densitydpi=high-dpi"/>
+<title>评价</title>
+<link rel="stylesheet" href="../../resources/css/style.css" type="text/css" />
+<script type="text/javascript" src="../../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../resources/js/jquery.mobile.min.js"></script>
+<script type="text/javascript" src="../../resources/js/public.js"></script>
+</head>
+<body>
+<div class="mainBox2">
+  <div class="starDiv" >
+    <span class="star" id="starDiv"><i></i><i></i><i></i><i></i><i></i></span>
+  </div>
+  <div class="pjText" id="inputList">
+    <textarea name="" cols="" rows="" placeholder="对这次购物满意吗？给小伙伴分享一下吧!"></textarea>
+    <p>140</p>
+  </div>
+  <div class="btnDiv"><span><button class="btnGreen btnGray" id="signBtn" disabled="disabled">我的活动</button></span></div> 
+</div>
+</body>
+<script>
+ setStar('#starDiv');
+ setClickBtn2('#inputList','#signBtn');
+</script>
+</html>

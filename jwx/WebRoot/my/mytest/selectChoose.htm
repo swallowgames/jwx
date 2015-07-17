@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=480, user-scalable=no, target-densitydpi=high-dpi"/>
+<title>业主认证</title>
+<link rel="stylesheet" href="../../resources/css/style.css" type="text/css" />
+<script type="text/javascript" src="../../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../resources/js/jquery.mobile.min.js"></script>
+<script type="text/javascript" src="../../resources/js/public.js"></script>
+</head>
+<body class="gray">
+<div class="mainBox2">
+
+  <div class="orderDiv marginT20 selectpark">
+    <div class="xxDiv chooseAdd">
+      <a href="fillAddData.htm"><i class="choosen"></i>
+        <p>紫龙公府</p>
+      </a>
+    </div>
+    <div class="xxDiv chooseAdd active">
+      <a href="fillAddData.htm"><i class="choosen"></i>
+        <p>悦涛轩</p>
+      </a>
+    </div>
+    <div class="xxDiv chooseAdd">
+      <a href="fillAddData.htm"><i class="choosen"></i>
+        <p>赏湖阁</p>
+      </a>
+    </div>
+    <div class="xxDiv chooseAdd">
+      <a href="fillAddData.htm"><i class="choosen"></i>
+        <p>万达广场</p>
+      </a>
+    </div>
+    <div class="xxDiv chooseAdd">
+      <a href="fillAddData.htm"><i class="choosen"></i>
+        <p>倚泓台</p>
+      </a>
+    </div>
+  </div>
+    
+</div>
+</body>
+<script>
+  $('.selectpark .chooseAdd').on('tap',function(){
+      $(this).addClass('active').siblings().removeClass('active');
+  });
+</script>
+</html>
